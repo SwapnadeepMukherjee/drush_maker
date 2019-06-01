@@ -123,9 +123,7 @@ def runner_handler(event):
         #  pass target folder/repo to script
         fc.make_platform(drush_maker("todo"), event['path'])
 
-
 # Local testing
-
 
 print sys.argv
 
@@ -135,8 +133,3 @@ if len(sys.argv) > 1:
 else:
     event_local = {'path': ""}
     runner_handler(event_local)
-
-
-
-
-
